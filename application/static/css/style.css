@@ -1,0 +1,13 @@
+i {
+    margin-right: 3%;
+}
+
+a {
+    color: blueviolet;
+    text-decoration: none;
+    margin-right: 3%;
+}
+
+a:hover {
+    color: gray;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>Welcome to my first Django Project {{name}}</h1> -->
+    <!-- double brackets this is the python code handled by django -->
+
+    <table border="1",border-collapse="collapse">
+        <tr>
+        <th>productnumber</th>
+        <th>product Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    <!-- </tr>
+    {% for key,value in product.items %}
+    <tr>
+        {% for i in value %}
+        <td>{{i}}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %} -->
+</tr>
+{% for product in Product %}
+<tr>
+    <td>{{ product.productNumber }}</td>
+    <td>{{ product.name }}</td>
+    <td>{{ product.quantity }}</td>
+    <td>{{ product.price }}</td>
+</tr>
+{% endfor %}
+    </table>
+    <a href="{% url 'i' %}">Index</a>
+</body>
+</html>
